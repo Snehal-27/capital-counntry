@@ -1,0 +1,5 @@
+<h1>Guess the Capital</h1>
+<p>What is the capital of {{ country.name }}?</p>
+<input type="text" [(ngModel)]="guess" (keydown.enter)="checkGuess()" />
+<button (click)="checkGuess()">Submit</button>
+<p *ngIf="showResult">{{ result }}</p>
